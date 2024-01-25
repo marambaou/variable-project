@@ -4,21 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>arrays and loop</title>
+    <style>
+        body {
+            font-family: Arial;
+            
+        }
+
+        .todo-grid {
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+        }
+
+    </style>
 </head>
 <body>
     <p>Todo List</p>
     <input placeholder="todo name" class="js-name-input">
-    <button onclick="addTodo();">add</button>
+    <input type="date" class="js-due-date-input">
+    <button onclick="addTodo();" class="addbutton">add</button>
+    <div class="js-todo-list todo-grid"></div>
+
     <script>
-        const todoList = [];
+        const todoList = [{name: 'make dinner', 
+        dueDate: '2024-12-22'}, {name: 'wash dishes', dueDate: '2024-12-23'}];
+        renderTodoList();
+          
+            function renderTodoList () {
+            let todoListHTML = '';
+            for (let i = 0; i < todoList.length; i++) {
+                const todoObject = todoList[i];
+                const { name, dueDate} = todoObject;
+                const html = `
+                <div>${name}</div>
+                <div>${dueDate}</div>
+                <button onclick = "
+                todoList.splice(${i}, 1);
+                renderTodoList();
+                ">Delete</button>`;
+                todoListHTML += html;
+            }
+
+            document.querySelector('.js-todo-list')
+            .innerHTML = todoListHTML;
+        }  
+        
         function addTodo() {
           const inputElement = document.querySelector('.js-name-input');
           const name = inputElement.value;
 
-          todoList.push(name);
-          console.log(todoList);
+          const dateInputElement = document.querySelector('.js-due-date-input');
+
+          const dueDate = dateInputElement.value;
+
+          todoList.push({
+            name: name, 
+            dueDate: dueDate
+        });
 
           inputElement.value = ''; 
+          renderTodoList();
     
          }
     </script>
