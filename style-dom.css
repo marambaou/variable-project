@@ -1,0 +1,24 @@
+body {
+    background-color: #3e5772;
+}
+
+.container {
+    border: 2px solid white;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+}
+#main-heading {
+    text-align: center;
+    color: white;
+}
+.list-items {
+    background-color: white;
+    color: black;
+    list-style: none;
+    text-align: center;
+    text-decoration: underline;
+    border-bottom: black;
+    padding: 10px;
+}
