@@ -3,68 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to sign-up page</title>
+    <title>welcome back</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: sans-serif;
+            font-family: Arial;
         }
         body {
-            background-image: linear-gradient(rgb(0, 0, 0, 0.75),rgb(0, 0, 0, 0.75)), url(dawid-zawila--G3rw6Y02D0-unsplash.jpg);
+            background-image: linear-gradient(rgb(0, 0, 0, 0.50),rgb(0, 0, 0, 0.50)), url(neom-abjEGTj3HZY-unsplash.jpg);
+            background-position: center;
             background-attachment: fixed;
             background-size: cover;
-            background-position: center;
-            width: 100%;
-            height: 100vh;
-            
-        }
-        .container {
-            width: 330px;
-            padding: 2rem 1rem;
-            margin: 50px auto;
-            border-radius: 10px;
-            text-align: center;
-            background-color: white;
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 
+        }
+        .wraped {
+            background-color: lightblue;
+            margin: 50px auto;
+            text-align: center;
+            width: 350px;
+            padding: 2rem 1rem;
+            border-radius: 10px;
         }
         h1 {
-            font-size: 2rem;
-            color: black;
-            margin-top: 1.2rem;
+            font-family: 'Arial Narrow Bold',
+
         }
-        form input {
-            width: 92%;
-            outline: none;
-            border: 1px solid white;
+        form input{
+            margin-bottom: 10px; 
             padding: 12px 20px;
-            margin-bottom: 10px;
+            width: 92%;
             border-radius: 20px;
-            background: white;
+            border: 1px solid white;
+            outline: none;
+            background-color: burlywood;
+            margin-top: 1.8rem;
+           
         }
         button {
-            font-size: 1rem;
-            margin-top: 1.8rem;
-            padding: 10px 0;
-            outline: none;
-            border: none;
             width: 90%;
+            background-color: rgb(17, 107, 143);
+            padding: 9px 0px;
+            border: none;
             color: white;
-            cursor: pointer;
-            background: rgb(17, 107, 143);
-
         }
-        button:hover {
-            background: rgba(17, 107, 143, 0.877);
-        }
-        input:focus {
-            border: 1px solid white;
+        .log {
+            margin: 20px 0;
         }
         .terms {
-            margin-top: 0.2rem;
-
+            margin: 1.3rem;
         }
         .terms input{
             height: 1em;
@@ -78,47 +66,37 @@
             font-size: 0.7rem;
 
         }
-
-        .terms a {
-            color: rgb(17, 107, 143);
-            text-decoration: none;
-        }
-        .member {
+        .not-member {
             font-size: 0.8rem;
             margin-top: 1.4rem;
             color: grey;
 
 
         }
-        .member a {
+        .not-member a {
             color: rgb(17, 107, 143);
             text-decoration: none;
         }
-
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>sign-up</h1>
+    <div class="wraped">
+        <h1>LOG - IN</h1>
         <form action="">
-            <input type="text" placeholder="First name">
-            <input type="text" placeholder="Last name"> 
-            <input type="text" placeholder="username">
+            <input type="text" placeholder="username"><br>
             <input type="password" placeholder="password">
-            <input type="password" placeholder="re-Enter"><br>
-            
         </form>
         <div class="terms">
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox">I agree to these <a href="">terms & condition</a></label>
+        <input type="checkbox">
+        <label for="checkbox">Remember this choice</label>
         </div>
-        <div>
-            <button>Sign Up</button>
-            <div class="member">Already a member? <a href="">Log in</a></div>
+        <button>LOG IN</button>
+        <div class="not-member">
+            Don't have an account? <a href="Sign-up.html">Sign up</a>
         </div>
+        
 
     </div>
-
     
 </body>
 </html>
