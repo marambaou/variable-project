@@ -1,0 +1,58 @@
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: darkgoldenrod;
+}
+.first-list li a:hover {
+    border-bottom: 2px solid white;
+}
+.reg {
+    border: 1px solid white;
+    background-color: lightblue;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 400px;
+    margin-left: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+#hteg {
+    font-size: 35px;
+    font-family: Arial;
+    margin-bottom: 15px;
+
+}
+
+
+form input{
+    margin-bottom: 13px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+
+}
+.chek{
+    margin-left: 5px;
+}
+button {
+    width: 150px;
+    background-color: black;
+    color: lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    color: white;
+    background-color: rgb(212, 145, 97);
+
+}
+.tage {
+    text-decoration: none;
+}

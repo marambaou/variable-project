@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENT NEST</title>
+    <style>
+        body {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(quino-al-mBQIfKlvowM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.topnav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.first-list {
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+    font-family: Arial;
+    font-size: 25px;
+
+}
+.first-list li a {
+    color: white;
+    margin-left: 50px;
+    text-decoration: none;
+
+
+}
+.login {
+border: 1px solid white;
+background-color: transparent;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+
+}
+.login:hover {
+    background-color: white;
+    color: black;
+}
+    </style>
+    
+
+</head>
+<body>
+    <div class="topnav">
+        <h4 >LOGO</h4>
+        <ul class="first-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a class="login" href="register.html">Log in</a></li>
+        </ul>
+    
+
+    </div> 
+   
+   <script>
+    let login = document.querySelector('.btn');
+    console.log(login);
+    login.addEventListener('click', function(){
+        login.style. = 'red';
+    })
+   
+   </script>
+</body>
+</html>
